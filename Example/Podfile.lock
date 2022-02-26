@@ -1,0 +1,16 @@
+PODS:
+  - ThrottledTask (0.1.0)
+
+DEPENDENCIES:
+  - ThrottledTask (from `../`)
+
+EXTERNAL SOURCES:
+  ThrottledTask:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ThrottledTask: 979c32587368ce697318e9255dc791443e4d7c54
+
+PODFILE CHECKSUM: 45d76024e6c9cd3c6cb66cb33956bca30766b63c
+
+COCOAPODS: 1.11.2
