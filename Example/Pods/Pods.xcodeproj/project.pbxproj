@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07CCFFB65F84879BD6BC28292370EB41 /* Pods-ThrottledTask_Example (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 899824EDD1AAB139C37C880F9D897DBF /* Pods-ThrottledTask_Example (macOS)-dummy.m */; };
+		15AA73C7BF798F63AB671CA8318ECE3C /* TaskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20F9937A6EF598F320C0A6A2FF974D /* TaskCache.swift */; };
+		30E0E70B24216BB33BFA489C76E476B1 /* Pods-ThrottledTask_Example (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF54F1D1841FFDC8435808172183158A /* Pods-ThrottledTask_Example (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311F3B1BA58D333A0F811AF39C64EDB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
+		694A2A06CF1F64CDEB38D1ECA2E6617D /* ThrottledTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A969D71FF2A77D6B219279D738DA8 /* ThrottledTask-dummy.m */; };
+		75F9C5C1718FABE90318FED1EBE07FBD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */; };
+		941265E686C9B918982BAEC109AC242D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3261E5A5395F45780622405F504B2804 /* Foundation.framework */; };
+		AA62FD37DD293488CE0FF51615F27139 /* Pods-ThrottledTask_Example (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FFCC289AE0C0BC45D11E559816DB36 /* Pods-ThrottledTask_Example (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC3DEE49F6097F1E621CF7CB49D7E08 /* ThrottledTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 978F1BB6EAFDD909893145C4F02C27CA /* ThrottledTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6A7042A0EF10B444EF62705B3B45078 /* Pods-ThrottledTask_Example (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96666F94171B6188448190139D175663 /* Pods-ThrottledTask_Example (iOS)-dummy.m */; };
+		F89C34A4B0DC1F1C631C807D5DA9DCE7 /* ThrottledTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164ECA83D8B73ED8A10AA1F3D59D083 /* ThrottledTask.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50C9AE3DFE94BE044D03958D78A18E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4B740316D44D18B3D52659475F0FAF;
+			remoteInfo = ThrottledTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0164ECA83D8B73ED8A10AA1F3D59D083 /* ThrottledTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrottledTask.swift; path = ThrottledTask/Classes/ThrottledTask.swift; sourceTree = "<group>"; };
+		051A607ACC79BE7D4DA3F618ED39322E /* Pods-ThrottledTask_Example (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThrottledTask_Example (iOS).modulemap"; sourceTree = "<group>"; };
+		0A28F969DEB9AC871BBADCA44DE07EC2 /* Pods-ThrottledTask_Example (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThrottledTask_Example (macOS)-Info.plist"; sourceTree = "<group>"; };
+		0CD2589D660F362C595A71BF7152A231 /* Pods-ThrottledTask_Example (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThrottledTask_Example (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FA710B47A66794842C1F74E3FA565C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		11FFCC289AE0C0BC45D11E559816DB36 /* Pods-ThrottledTask_Example (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThrottledTask_Example (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		143CEEAEE8BA053B3326C2BE03CD29A1 /* Pods-ThrottledTask_Example (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThrottledTask_Example (macOS).modulemap"; sourceTree = "<group>"; };
+		2786A3BDEF1856ED356F612B824794EC /* Pods-ThrottledTask_Example (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThrottledTask_Example (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		28AC8637FD1A60EF0C37E2B17E659B8F /* ThrottledTask.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ThrottledTask.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FE840756C545365E64CAA13414F8D52 /* ThrottledTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ThrottledTask.modulemap; sourceTree = "<group>"; };
+		31DD4E6D4072B0CB25E132E2F77B5D69 /* Pods-ThrottledTask_Example (iOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThrottledTask_Example (iOS)"; path = Pods_ThrottledTask_Example__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3261E5A5395F45780622405F504B2804 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37CC8DB73F9FADBA1A996DA04B428FD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3E558F348E015C74A01576D84ADC3AE7 /* Pods-ThrottledTask_Example (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThrottledTask_Example (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		456E8E74034E7D6DC9468C4E51EF5FB2 /* Pods-ThrottledTask_Example (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThrottledTask_Example (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E5A969D71FF2A77D6B219279D738DA8 /* ThrottledTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ThrottledTask-dummy.m"; sourceTree = "<group>"; };
+		53DBB3D55D918334AE4324CD8315C9DB /* Pods-ThrottledTask_Example (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThrottledTask_Example (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		558162C4534291786F5DA7D152B61E13 /* Pods-ThrottledTask_Example (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThrottledTask_Example (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5C6FE34DF31BC53477E1D893C50CF354 /* ThrottledTask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ThrottledTask-Info.plist"; sourceTree = "<group>"; };
+		6B2773E8B6E6780C5DA2E7178A542AA2 /* Pods-ThrottledTask_Example (iOS)-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ThrottledTask_Example (iOS)-frameworks.sh"; sourceTree = "<group>"; };
+		70897CE030BCC89C7EA20DF9D0D5E2A4 /* Pods-ThrottledTask_Example (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThrottledTask_Example (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		8892EF98AA385B6DB4BED316FAFC6476 /* ThrottledTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThrottledTask.release.xcconfig; sourceTree = "<group>"; };
+		899824EDD1AAB139C37C880F9D897DBF /* Pods-ThrottledTask_Example (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThrottledTask_Example (macOS)-dummy.m"; sourceTree = "<group>"; };
+		8E20F9937A6EF598F320C0A6A2FF974D /* TaskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskCache.swift; path = ThrottledTask/Classes/TaskCache.swift; sourceTree = "<group>"; };
+		90BC99C039112347ABB06750ADF7E430 /* ThrottledTask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ThrottledTask-prefix.pch"; sourceTree = "<group>"; };
+		9381E1275A860DCD6002107FA89AD665 /* Pods-ThrottledTask_Example (macOS) */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThrottledTask_Example (macOS)"; path = Pods_ThrottledTask_Example__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C69DDB9185B9D86D84EC5645F829DF /* Pods-ThrottledTask_Example (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThrottledTask_Example (iOS)-Info.plist"; sourceTree = "<group>"; };
+		96666F94171B6188448190139D175663 /* Pods-ThrottledTask_Example (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThrottledTask_Example (iOS)-dummy.m"; sourceTree = "<group>"; };
+		978F1BB6EAFDD909893145C4F02C27CA /* ThrottledTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ThrottledTask-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE64752064C0A3B4FF3F691DE979F3E4 /* ThrottledTask */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ThrottledTask; path = ThrottledTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC66391FC2AD880819BDABBCE45D72D /* Pods-ThrottledTask_Example (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThrottledTask_Example (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA95AC74C37A4B7A58E2EBF6CC4A0ED9 /* ThrottledTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThrottledTask.debug.xcconfig; sourceTree = "<group>"; };
+		FF54F1D1841FFDC8435808172183158A /* Pods-ThrottledTask_Example (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThrottledTask_Example (macOS)-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11269C4002A57E32FBF904F0AF54AA35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941265E686C9B918982BAEC109AC242D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BE35DDE19B3A38B18AD94A72BC7995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9C5C1718FABE90318FED1EBE07FBD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35F4EEFE686B377EDEA67F6F3112159A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311F3B1BA58D333A0F811AF39C64EDB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BA6E088ECC981464C8A6AE5E83E0253 /* Pods-ThrottledTask_Example (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				051A607ACC79BE7D4DA3F618ED39322E /* Pods-ThrottledTask_Example (iOS).modulemap */,
+				53DBB3D55D918334AE4324CD8315C9DB /* Pods-ThrottledTask_Example (iOS)-acknowledgements.markdown */,
+				DFC66391FC2AD880819BDABBCE45D72D /* Pods-ThrottledTask_Example (iOS)-acknowledgements.plist */,
+				96666F94171B6188448190139D175663 /* Pods-ThrottledTask_Example (iOS)-dummy.m */,
+				6B2773E8B6E6780C5DA2E7178A542AA2 /* Pods-ThrottledTask_Example (iOS)-frameworks.sh */,
+				95C69DDB9185B9D86D84EC5645F829DF /* Pods-ThrottledTask_Example (iOS)-Info.plist */,
+				11FFCC289AE0C0BC45D11E559816DB36 /* Pods-ThrottledTask_Example (iOS)-umbrella.h */,
+				2786A3BDEF1856ED356F612B824794EC /* Pods-ThrottledTask_Example (iOS).debug.xcconfig */,
+				558162C4534291786F5DA7D152B61E13 /* Pods-ThrottledTask_Example (iOS).release.xcconfig */,
+			);
+			name = "Pods-ThrottledTask_Example (iOS)";
+			path = "Target Support Files/Pods-ThrottledTask_Example (iOS)";
+			sourceTree = "<group>";
+		};
+		214DCA9CA943CF8608CDE1F5933A1A76 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6493BE56D63A02355DAB5B03D0C8C3A /* ThrottledTask */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2DBC39FE3E9E6081B1985C642138E2F0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0FA710B47A66794842C1F74E3FA565C2 /* LICENSE */,
+				37CC8DB73F9FADBA1A996DA04B428FD5 /* README.md */,
+				28AC8637FD1A60EF0C37E2B17E659B8F /* ThrottledTask.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3384E16C2E72FBF6B3A0294DA672B4F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FE840756C545365E64CAA13414F8D52 /* ThrottledTask.modulemap */,
+				4E5A969D71FF2A77D6B219279D738DA8 /* ThrottledTask-dummy.m */,
+				5C6FE34DF31BC53477E1D893C50CF354 /* ThrottledTask-Info.plist */,
+				90BC99C039112347ABB06750ADF7E430 /* ThrottledTask-prefix.pch */,
+				978F1BB6EAFDD909893145C4F02C27CA /* ThrottledTask-umbrella.h */,
+				EA95AC74C37A4B7A58E2EBF6CC4A0ED9 /* ThrottledTask.debug.xcconfig */,
+				8892EF98AA385B6DB4BED316FAFC6476 /* ThrottledTask.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ThrottledTask";
+			sourceTree = "<group>";
+		};
+		3ED57A33C894B47DC1B43427A9383793 /* Pods-ThrottledTask_Example (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				143CEEAEE8BA053B3326C2BE03CD29A1 /* Pods-ThrottledTask_Example (macOS).modulemap */,
+				0CD2589D660F362C595A71BF7152A231 /* Pods-ThrottledTask_Example (macOS)-acknowledgements.markdown */,
+				456E8E74034E7D6DC9468C4E51EF5FB2 /* Pods-ThrottledTask_Example (macOS)-acknowledgements.plist */,
+				899824EDD1AAB139C37C880F9D897DBF /* Pods-ThrottledTask_Example (macOS)-dummy.m */,
+				0A28F969DEB9AC871BBADCA44DE07EC2 /* Pods-ThrottledTask_Example (macOS)-Info.plist */,
+				FF54F1D1841FFDC8435808172183158A /* Pods-ThrottledTask_Example (macOS)-umbrella.h */,
+				3E558F348E015C74A01576D84ADC3AE7 /* Pods-ThrottledTask_Example (macOS).debug.xcconfig */,
+				70897CE030BCC89C7EA20DF9D0D5E2A4 /* Pods-ThrottledTask_Example (macOS).release.xcconfig */,
+			);
+			name = "Pods-ThrottledTask_Example (macOS)";
+			path = "Target Support Files/Pods-ThrottledTask_Example (macOS)";
+			sourceTree = "<group>";
+		};
+		403FC3F773543AC381194D82B649760D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31DD4E6D4072B0CB25E132E2F77B5D69 /* Pods-ThrottledTask_Example (iOS) */,
+				9381E1275A860DCD6002107FA89AD665 /* Pods-ThrottledTask_Example (macOS) */,
+				BE64752064C0A3B4FF3F691DE979F3E4 /* ThrottledTask */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41C052635D3E21350AC08C5F316759F6 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				5A54C97DEB1A3977AC3A62AFF00971BF /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		45B217B12FE855A2D6F1B4EC06A0836B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BA6E088ECC981464C8A6AE5E83E0253 /* Pods-ThrottledTask_Example (iOS) */,
+				3ED57A33C894B47DC1B43427A9383793 /* Pods-ThrottledTask_Example (macOS) */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABCD2AA1C1DFCD4E2578CE87BDFD93F /* iOS */,
+				41C052635D3E21350AC08C5F316759F6 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6493BE56D63A02355DAB5B03D0C8C3A /* ThrottledTask */ = {
+			isa = PBXGroup;
+			children = (
+				8E20F9937A6EF598F320C0A6A2FF974D /* TaskCache.swift */,
+				0164ECA83D8B73ED8A10AA1F3D59D083 /* ThrottledTask.swift */,
+				2DBC39FE3E9E6081B1985C642138E2F0 /* Pod */,
+				3384E16C2E72FBF6B3A0294DA672B4F9 /* Support Files */,
+			);
+			name = ThrottledTask;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				214DCA9CA943CF8608CDE1F5933A1A76 /* Development Pods */,
+				4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */,
+				403FC3F773543AC381194D82B649760D /* Products */,
+				45B217B12FE855A2D6F1B4EC06A0836B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DABCD2AA1C1DFCD4E2578CE87BDFD93F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3261E5A5395F45780622405F504B2804 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80A820263389749C496E94CC3E8ED359 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC3DEE49F6097F1E621CF7CB49D7E08 /* ThrottledTask-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F459BF70A0890A7D8C7E95BF1224ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E0E70B24216BB33BFA489C76E476B1 /* Pods-ThrottledTask_Example (macOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7509B76BF737BF00C46EF8EA9A3FE52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA62FD37DD293488CE0FF51615F27139 /* Pods-ThrottledTask_Example (iOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C4B740316D44D18B3D52659475F0FAF /* ThrottledTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A43D67EFA5B4B70131F5C21206E86C2 /* Build configuration list for PBXNativeTarget "ThrottledTask" */;
+			buildPhases = (
+				80A820263389749C496E94CC3E8ED359 /* Headers */,
+				C83FBC0D99195147A4DDB6103F49BD7C /* Sources */,
+				35F4EEFE686B377EDEA67F6F3112159A /* Frameworks */,
+				86E51A9E37023CFBB7E65E7987B37FA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThrottledTask;
+			productName = ThrottledTask;
+			productReference = BE64752064C0A3B4FF3F691DE979F3E4 /* ThrottledTask */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A83A66375AECEC47267B29E341E703F /* Pods-ThrottledTask_Example (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D060F9EB113CF78599E98DA403F7E573 /* Build configuration list for PBXNativeTarget "Pods-ThrottledTask_Example (macOS)" */;
+			buildPhases = (
+				A5F459BF70A0890A7D8C7E95BF1224ED /* Headers */,
+				8B7F04B3B1FA9AD57DF7A952535A1ACF /* Sources */,
+				26BE35DDE19B3A38B18AD94A72BC7995 /* Frameworks */,
+				05AC2AF026FADAA24A1B9015FBB9E24D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ThrottledTask_Example (macOS)";
+			productName = Pods_ThrottledTask_Example__macOS_;
+			productReference = 9381E1275A860DCD6002107FA89AD665 /* Pods-ThrottledTask_Example (macOS) */;
+			productType = "com.apple.product-type.framework";
+		};
+		71D807D26131BBFE0E7B883D6D879B8D /* Pods-ThrottledTask_Example (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BEAD4ED1679085D6012832E41F6058 /* Build configuration list for PBXNativeTarget "Pods-ThrottledTask_Example (iOS)" */;
+			buildPhases = (
+				B7509B76BF737BF00C46EF8EA9A3FE52 /* Headers */,
+				EEBCA5D8B02DB9A9240B45BBC2F7A734 /* Sources */,
+				11269C4002A57E32FBF904F0AF54AA35 /* Frameworks */,
+				060676A34D90A91325AABEE73088EF4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A861272D75801E480C7245E76B33B9D6 /* PBXTargetDependency */,
+			);
+			name = "Pods-ThrottledTask_Example (iOS)";
+			productName = Pods_ThrottledTask_Example__iOS_;
+			productReference = 31DD4E6D4072B0CB25E132E2F77B5D69 /* Pods-ThrottledTask_Example (iOS) */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 403FC3F773543AC381194D82B649760D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71D807D26131BBFE0E7B883D6D879B8D /* Pods-ThrottledTask_Example (iOS) */,
+				5A83A66375AECEC47267B29E341E703F /* Pods-ThrottledTask_Example (macOS) */,
+				1C4B740316D44D18B3D52659475F0FAF /* ThrottledTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05AC2AF026FADAA24A1B9015FBB9E24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		060676A34D90A91325AABEE73088EF4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E51A9E37023CFBB7E65E7987B37FA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B7F04B3B1FA9AD57DF7A952535A1ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07CCFFB65F84879BD6BC28292370EB41 /* Pods-ThrottledTask_Example (macOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83FBC0D99195147A4DDB6103F49BD7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15AA73C7BF798F63AB671CA8318ECE3C /* TaskCache.swift in Sources */,
+				F89C34A4B0DC1F1C631C807D5DA9DCE7 /* ThrottledTask.swift in Sources */,
+				694A2A06CF1F64CDEB38D1ECA2E6617D /* ThrottledTask-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBCA5D8B02DB9A9240B45BBC2F7A734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A7042A0EF10B444EF62705B3B45078 /* Pods-ThrottledTask_Example (iOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A861272D75801E480C7245E76B33B9D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ThrottledTask;
+			target = 1C4B740316D44D18B3D52659475F0FAF /* ThrottledTask */;
+			targetProxy = 50C9AE3DFE94BE044D03958D78A18E3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FF1D52E1131DA1388AF89E8AE27BA83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6793E8CFC6967B763836112B7EC35C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2786A3BDEF1856ED356F612B824794EC /* Pods-ThrottledTask_Example (iOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThrottledTask_Example (iOS)/Pods-ThrottledTask_Example (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThrottledTask_Example (iOS)/Pods-ThrottledTask_Example (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A36DFED9C1EFD5F418D1D64CDAE8CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA95AC74C37A4B7A58E2EBF6CC4A0ED9 /* ThrottledTask.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ThrottledTask/ThrottledTask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ThrottledTask/ThrottledTask-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ThrottledTask/ThrottledTask.modulemap";
+				PRODUCT_MODULE_NAME = ThrottledTask;
+				PRODUCT_NAME = ThrottledTask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E719041E1F08C8611AD97207B14134B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E558F348E015C74A01576D84ADC3AE7 /* Pods-ThrottledTask_Example (macOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThrottledTask_Example (macOS)/Pods-ThrottledTask_Example (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThrottledTask_Example (macOS)/Pods-ThrottledTask_Example (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C010F490EF26616750791CDCCCA81F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8892EF98AA385B6DB4BED316FAFC6476 /* ThrottledTask.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ThrottledTask/ThrottledTask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ThrottledTask/ThrottledTask-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ThrottledTask/ThrottledTask.modulemap";
+				PRODUCT_MODULE_NAME = ThrottledTask;
+				PRODUCT_NAME = ThrottledTask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C59305E3D84A8A20D1BA9B32DD5EC8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558162C4534291786F5DA7D152B61E13 /* Pods-ThrottledTask_Example (iOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThrottledTask_Example (iOS)/Pods-ThrottledTask_Example (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThrottledTask_Example (iOS)/Pods-ThrottledTask_Example (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD02E5DD35F7CB23A5AF91395A6BD7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FAC54BD302481989C12FA4E4AC730093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70897CE030BCC89C7EA20DF9D0D5E2A4 /* Pods-ThrottledTask_Example (macOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ThrottledTask_Example (macOS)/Pods-ThrottledTask_Example (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-ThrottledTask_Example (macOS)/Pods-ThrottledTask_Example (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A43D67EFA5B4B70131F5C21206E86C2 /* Build configuration list for PBXNativeTarget "ThrottledTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A36DFED9C1EFD5F418D1D64CDAE8CA4 /* Debug */,
+				C010F490EF26616750791CDCCCA81F76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD02E5DD35F7CB23A5AF91395A6BD7A0 /* Debug */,
+				2FF1D52E1131DA1388AF89E8AE27BA83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BEAD4ED1679085D6012832E41F6058 /* Build configuration list for PBXNativeTarget "Pods-ThrottledTask_Example (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6793E8CFC6967B763836112B7EC35C69 /* Debug */,
+				C59305E3D84A8A20D1BA9B32DD5EC8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D060F9EB113CF78599E98DA403F7E573 /* Build configuration list for PBXNativeTarget "Pods-ThrottledTask_Example (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E719041E1F08C8611AD97207B14134B /* Debug */,
+				FAC54BD302481989C12FA4E4AC730093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

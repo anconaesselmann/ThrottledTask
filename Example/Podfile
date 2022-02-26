@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ThrottledTask_Example (iOS)' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ThrottledTask_Example (iOS)
+
+  pod 'ThrottledTask', :path => '../'
+
+end
+
+target 'ThrottledTask_Example (macOS)' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ThrottledTask_Example (macOS)
+
+end
