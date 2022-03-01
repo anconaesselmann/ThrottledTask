@@ -79,7 +79,6 @@ struct TaskView: View {
             ToolbarItem(placement: .bottomBar) {
                 HStack {
                     Button("Add task") {
-                        print("Pressed")
                         requests = [IdentifiableWrapper(wrappedValue: requestType)] + requests
                     }
                     Spacer()

@@ -11,11 +11,11 @@ public actor TaskCache<Key, TaskType> where Key: Hashable {
         case cacheError
     }
     
-    private let cache: NSCache<NSString, ThrottledTask<TaskType>>
+    private let cache: NSCache<NSString, AnyObject>
     
     public init(countLimit: Int? = nil) {
         cache = {
-            let cache = NSCache<NSString, ThrottledTask<TaskType>>()
+            let cache = NSCache<NSString, AnyObject>()
             if let countLimit = countLimit {
                 cache.countLimit = countLimit
             }
@@ -37,20 +37,42 @@ public actor TaskCache<Key, TaskType> where Key: Hashable {
         validUntil expiration: Date? = nil,
         operation: @escaping Operation
     ) async throws -> Value {
-        let throttledTask = throttledTask(for: key)
-        if let result = try await throttledTask.subscribe(until: expiration, operation: operation) as? Value {
-            return result
+        let value: Value?
+        if let expiration = expiration {
+            value = try await throttledTask(for: key, validUntil: expiration, operation: operation).value as? Value
         } else {
+            value = try await synchronizedTask(for: key, operation: operation).value as? Value
+        }
+        guard let value = value else {
             throw Error.invalidType
         }
+        return value
     }
-    
-    private func throttledTask(for key: Key) -> ThrottledTask<TaskType> {
+
+    private func synchronizedTask(
+        for key: Key,
+        operation: @escaping Operation
+    ) -> SynchronizedTask<TaskType> {
         let nsStringKey = NSString(string: String(key.hashValue))
-        if let cached = cache.object(forKey: nsStringKey) {
+        if let cached = cache.object(forKey: nsStringKey) as? SynchronizedTask<TaskType> {
             return cached
         } else {
-            let new = ThrottledTask<TaskType>()
+            let new = SynchronizedTask<TaskType>(operation: operation)
+            cache.setObject(new, forKey: nsStringKey)
+            return new
+        }
+    }
+
+    private func throttledTask(
+        for key: Key,
+        validUntil expiration: Date,
+        operation: @escaping Operation
+    ) -> ThrottledTask<TaskType> {
+        let nsStringKey = NSString(string: String(key.hashValue))
+        if let cached = cache.object(forKey: nsStringKey) as? ThrottledTask<TaskType>, cached.expiration.isFutureDate {
+            return cached
+        } else {
+            let new = ThrottledTask<TaskType>(expiration: expiration, operation: operation)
             cache.setObject(new, forKey: nsStringKey)
             return new
         }
